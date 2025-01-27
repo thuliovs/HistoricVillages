@@ -95,6 +95,7 @@
     <Content Include="Content\styles.css" />
     <Content Include="criar_conta.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="login.aspx" />
     <Content Include="paginaInicial.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
@@ -130,6 +131,7 @@
     <Content Include="scripts\jquery-3.7.1.slim.js" />
     <Content Include="scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="local.aspx" />
+    <Content Include="utilizador\areaPessoal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +144,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="paginaInicial.aspx.cs">
       <DependentUpon>paginaInicial.aspx</DependentUpon>
@@ -158,6 +167,13 @@
     <Compile Include="local.aspx.designer.cs">
       <DependentUpon>local.aspx</DependentUpon>
     </Compile>
+    <Compile Include="utilizador\areaPessoal.aspx.cs">
+      <DependentUpon>areaPessoal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="utilizador\areaPessoal.aspx.designer.cs">
+      <DependentUpon>areaPessoal.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -172,7 +188,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="imagens\" />
-    <Folder Include="utilizador\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

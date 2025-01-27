@@ -3,30 +3,33 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #252525;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 /* Header Styles */
 header {
-    background-color: #eee;
+    background-color: #181818;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #333;
 }
 
-header h1 {
-    color: #86754d;
-    font-size: 24px;
-    margin: 0;
-}
+    header h1 {
+        color: #f0c674;
+        font-size: 28px;
+        margin: 0;
+    }
 
 nav ul {
     list-style: none;
@@ -36,15 +39,20 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
+    nav ul li {
+        display: inline;
+    }
 
-nav ul li a, .login {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-}
+        nav ul li a, .login {
+            text-decoration: none;
+            color: #c5c6c7;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+            nav ul li a:hover, .login:hover {
+                color: #E8E6E3;
+            }
 
 /* Main Section */
 main {
@@ -52,8 +60,8 @@ main {
 }
 
 h2 {
-    font-size: 22px;
-    color: #333;
+    font-size: 24px;
+    color: #f0c674;
 }
 
 .locations {
@@ -65,29 +73,34 @@ h2 {
 .location {
     width: calc(33.333% - 20px);
     text-align: center;
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.location img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+    .location img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 
-.location h3 {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
+    .location h3 {
+        font-size: 20px;
+        margin: 10px 0 5px;
+        color: #E8E6E3;
+    }
 
-.location p {
-    font-size: 14px;
-    color: #666;
-}
+    .location p {
+        font-size: 14px;
+        color: #c5c6c7;
+    }
 
 /* Sidebar */
 .sidebar {
     margin-top: 20px;
-    font-size: 16px;
-    color: #333;
+    font-size: 18px;
+    color: #f0c674;
     font-weight: bold;
     text-align: right;
 }
@@ -98,19 +111,91 @@ h2 {
     margin-top: 20px;
 }
 
-.pagination a {
-    text-decoration: none;
-    color: #3366cc;
-    margin: 0 10px;
-    font-size: 14px;
-}
+    .pagination a {
+        text-decoration: none;
+        color: #E8E6E3;
+        margin: 0 10px;
+        font-size: 16px;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .pagination a:hover {
+            color: #f0c674;
+        }
 
 /* Footer */
 footer {
-    background-color: #ddd;
+    background-color: #181818;
     padding: 15px;
     text-align: center;
-    color: #666;
+    color: #c5c6c7;
     font-size: 14px;
     margin-top: 20px;
+    border-top: 2px solid #333;
+}
+
+/* Form Styles */
+.form-container {
+    padding: 40px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 50px auto;
+    margin-top: 0px;
+}
+
+.form-title {
+    font-size: 28px;
+    color: #f0c674;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        color: #c5c6c7;
+        margin-bottom: 5px;
+    }
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+    .input-field:focus {
+        border-color: #f0c674;
+        outline: none;
+    }
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #f0c674;
+    color: #181818;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .btn-submit:hover {
+        background-color: #E7D2A9;
+    }
+
+.error-message {
+    color: #ff4c4c;
+    font-size: 14px;
+    margin-top: 5px;
 }

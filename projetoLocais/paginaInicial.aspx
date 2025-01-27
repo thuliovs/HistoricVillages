@@ -11,12 +11,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>Locais de Portugal</h1>
+            <a href="paginaInicial.aspx"><h1>Locais de Portugal</h1></a>
             <nav>
                 <ul>
-                    <li><a href="paginaInicial.aspx">Página Inicial</a></li>
                     <li><a href="#">Pesquisa</a></li>
+                    <li><a href="paginaInicial.aspx">Página Inicial</a></li>
                     <li><a href="login.aspx" class="login">Iniciar Sessão</a></li>
+                    <li><a href="criar_conta.aspx" class="login">Resgistro</a></li>
                 </ul>
             </nav>
         </header>
